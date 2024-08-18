@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Steak Recipe{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Steak Recipe</h1>
+        <img src="{{ url_for('static', filename='steak.webp') }}" alt="Steak" class="img-fluid my-4">
+    </div>
+    <h2>Ingredients:</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Ribeye steak</li>
+        <li class="list-group-item">Salt</li>
+        <li class="list-group-item">Pepper</li>
+        <li class="list-group-item">Butter</li>
+        <li class="list-group-item">Garlic</li>
+        <li class="list-group-item">Fresh rosemary</li>
+    </ul>
+    <h2 class="mt-4">Instructions:</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Season the steak generously with salt and pepper.</li>
+        <li class="list-group-item">Heat a skillet over high heat and add butter, garlic, and rosemary.</li>
+        <li class="list-group-item">Sear the steak on each side until it reaches your desired doneness.</li>
+        <li class="list-group-item">Baste the steak with the melted butter and herbs while cooking.</li>
+        <li class="list-group-item">Let the steak rest for a few minutes before serving.</li>
+    </ol>
+{% endblock %}

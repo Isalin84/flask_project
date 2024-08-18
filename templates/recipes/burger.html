@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Burger Recipe{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Burger Recipe</h1>
+        <img src="{{ url_for('static', filename='burger.webp') }}" alt="Burger" class="img-fluid my-4">
+    </div>
+    <h2>Ingredients:</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Beef patty</li>
+        <li class="list-group-item">Burger buns</li>
+        <li class="list-group-item">Cheese</li>
+        <li class="list-group-item">Lettuce</li>
+        <li class="list-group-item">Tomato</li>
+        <li class="list-group-item">Onion</li>
+        <li class="list-group-item">Pickles</li>
+        <li class="list-group-item">Ketchup</li>
+        <li class="list-group-item">Mustard</li>
+    </ul>
+    <h2 class="mt-4">Instructions:</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Grill the beef patty until cooked to your preference.</li>
+        <li class="list-group-item">Toast the burger buns on the grill.</li>
+        <li class="list-group-item">Assemble the burger with cheese, lettuce, tomato, onion, and pickles.</li>
+        <li class="list-group-item">Add ketchup and mustard to taste.</li>
+        <li class="list-group-item">Serve with fries or your favorite side.</li>
+    </ol>
+{% endblock %}

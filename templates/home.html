@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная - Проект FLask{% endblock %}
+
+{% block content %}
+    <h1 class="text-center mb-5">Добро пожаловать на наш сайт рецептов</h1>
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{{ url_for('static', filename='burger.webp') }}" class="card-img-top" alt="Бургер">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Бургер</h5>
+                    <a href="{{ url_for('burger') }}" class="btn btn-primary">Посмотреть рецепт</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{{ url_for('static', filename='steak.webp') }}" class="card-img-top" alt="Стейк">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Стейк</h5>
+                    <a href="{{ url_for('steak') }}" class="btn btn-primary">Посмотреть рецепт</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{{ url_for('static', filename='cake.webp') }}" class="card-img-top" alt="Пирожное">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Пирожное</h5>
+                    <a href="{{ url_for('cake') }}" class="btn btn-primary">Посмотреть рецепт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

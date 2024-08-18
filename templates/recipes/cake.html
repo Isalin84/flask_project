@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Cake Recipe{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Cake Recipe</h1>
+        <img src="{{ url_for('static', filename='cake.webp') }}" alt="Cake" class="img-fluid my-4">
+    </div>
+    <h2>Ingredients:</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Flour</li>
+        <li class="list-group-item">Sugar</li>
+        <li class="list-group-item">Butter</li>
+        <li class="list-group-item">Eggs</li>
+        <li class="list-group-item">Vanilla extract</li>
+        <li class="list-group-item">Baking powder</li>
+        <li class="list-group-item">Milk</li>
+        <li class="list-group-item">Your favorite frosting</li>
+    </ul>
+    <h2 class="mt-4">Instructions:</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Preheat your oven to 350°F (175°C).</li>
+        <li class="list-group-item">Cream together the butter and sugar until light and fluffy.</li>
+        <li class="list-group-item">Add eggs one at a time, then stir in vanilla.</li>
+        <li class="list-group-item">Combine flour and baking powder, add to the creamed mixture, and mix well.</li>
+        <li class="list-group-item">Stir in the milk until the batter is smooth.</li>
+        <li class="list-group-item">Pour batter into a greased cake pan and bake for 30-40 minutes.</li>
+        <li class="list-group-item">Let the cake cool, then frost with your favorite frosting.</li>
+    </ol>
+{% endblock %}
